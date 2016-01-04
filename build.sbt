@@ -1,7 +1,4 @@
-name := "sbt-doctest-test"
+name := "sbt-test"
 
-libraryDependencies ++= Seq(
-  "org.scalacheck" %% "scalacheck" % "1.10.0" % "test"
-)
-
-DoctestPlugin.doctestSettings
+lazy val docs = project
+  .settings(tutSettings)
